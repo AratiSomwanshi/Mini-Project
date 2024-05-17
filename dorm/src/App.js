@@ -4,12 +4,14 @@ import { Home } from "./components/Home";
 import { Registration } from "./components/Registrastion";
 import { UserList } from "./components/UserList";
 import { BASE_ROUTE, REGISTRATION_ROUTE, USER_LIST_ROUTE } from "./constants/AppRoute";
+import Footer from "./components/Footer";
 
 
 function App() {
   return (
     <BrowserRouter>
       <NavigationBar/>
+      <Footer/>
       <Routes>
         <Route path={BASE_ROUTE} element={<Home/>} />
         <Route path={REGISTRATION_ROUTE} element={<Registration/>} />
