@@ -1,34 +1,22 @@
-import { BrowserRouter, Routes ,Route} from "react-router-dom";
-import { NavigationBar } from "./Components/NavigationBar";
-import { About } from "./Components/About";
 
-import { Home } from "./Components/Home";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import { NavigationBar } from "./components/NavigationBar";
+import { Registration } from "./components/Registrastion";
+import { UserList } from "./components/UserList";
 
-import {SignIn} from "./Components/SignIn";
 
-import {SignUp} from "./Components/SignUp";
 
-import Footer from "./Components/Footer";
-
-function App() {
+function App(){
   return (
-    
-      <BrowserRouter>
-      <div>
-      <NavigationBar/>
-      <Footer/>
-      <Routes>
-        <Route path="/" element={<Home/>}></Route>
-        <Route path="/about" element={<About/>}></Route>  
-      <Route path="/signin" element={<SignIn/>}></Route>
-      <Route path="/signup" element={<SignUp/>}></Route>
-        
-      </Routes>
-      </div>
-      </BrowserRouter>
-      
-    
+    <BrowserRouter>
+    <NavigationBar/>
+    <Routes>
+    <Route path="BASE_ROUTE" element={<Home></Home>}></Route>
+    <Route path="REGISTRATION_ROUTE" element={<Registration/>}></Route>
+    <Route path="USER_LIST_ROUTE" element={<UserList/>}></Route>
+   
+    </Routes>
+    </BrowserRouter>
   );
 }
-
 export default App;
