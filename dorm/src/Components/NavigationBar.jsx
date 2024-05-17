@@ -1,7 +1,7 @@
-import { Container, ListGroup, Nav, Navbar } from "react-bootstrap";
+import { Container,  Nav, Navbar } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import { BASE_ROUTE, REGISTRATION_ROUTE, USER_LIST_ROUTE } from "../constants/AppRoute";
-import { UserList } from "./UserList";
+
 
 export function NavigationBar() {
     return (
@@ -20,8 +20,11 @@ export function NavigationBar() {
                         </LinkContainer>
 
                         <LinkContainer to={USER_LIST_ROUTE}>
-                            <Nav.Link>User List</Nav.Link>
+                            <Nav.Link>UserList</Nav.Link>
                         </LinkContainer>
+                        
+                        
+
                     </Nav>
                 </Navbar.Collapse>
             </Container>
