@@ -5,7 +5,7 @@ import { BASE_ROUTE, REGISTRATION_ROUTE, USER_LIST_ROUTE } from "../constants/Ap
 import {  Container,Nav , Navbar} from "react-bootstrap";
 export function NavigationBar() {
     return (
-        <Navbar expand="lg" bg="dark" data-bs-theme="dark">
+        <Navbar expand="lg" >
             <Container>
                 <Navbar.Brand href="#home">DORM </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
