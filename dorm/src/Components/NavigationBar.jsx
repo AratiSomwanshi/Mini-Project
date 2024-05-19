@@ -1,6 +1,6 @@
 
 import { LinkContainer } from "react-router-bootstrap";
-import { BASE_ROUTE, REGISTRATION_ROUTE, USER_LIST_ROUTE } from "../constants/AppRoute";
+import { BASE_ROUTE, REGISTRATION_ROUTE, USER_LIST_ROUTE,DORM_SEARCH } from "../constants/AppRoute";
 
 import { Button, Col, Container, Form, Row ,Nav , Navbar} from "react-bootstrap";
 export function NavigationBar() {
@@ -23,25 +23,10 @@ export function NavigationBar() {
                             <Nav.Link>UserList</Nav.Link>
                         </LinkContainer>
                         
-
-
-                        <Form inline>
-              <Row>
-                <Col xs="auto">
-                  <Form.Control
-                    type="text"
-                    placeholder="Search"
-                    className=" mr-sm-2 "
-                    
-                    style={{ width: '380px', height: '40px' ,marginLeft: '80px' }}
-                  />
-                </Col>
-                <Col xs="auto">
-                  <Button type="submit" style={{ width: '70px', height: '40px' }} >Submit</Button>
-                </Col>
-              </Row>
-            </Form>
-
+                        <LinkContainer to ={DORM_SEARCH}>
+                            <Nav.Link>SearchDorm</Nav.Link>
+                        </LinkContainer>
+                   
                         
 
                     </Nav>
