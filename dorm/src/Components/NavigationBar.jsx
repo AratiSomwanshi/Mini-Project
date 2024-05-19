@@ -1,6 +1,6 @@
 
 import { LinkContainer } from "react-router-bootstrap";
-import { BASE_ROUTE, REGISTRATION_ROUTE, USER_LIST_ROUTE } from "../constants/AppRoute";
+import { BASE_ROUTE, REGISTRATION_ROUTE, USER_LIST_ROUTE,DORM_SEARCH } from "../constants/AppRoute";
 
 import {  Container,Nav , Navbar} from "react-bootstrap";
 export function NavigationBar() {
@@ -23,9 +23,15 @@ export function NavigationBar() {
                             <Nav.Link>UserList</Nav.Link>
                         </LinkContainer>
                         
+                        <LinkContainer to ={DORM_SEARCH}>
+                            <Nav.Link>SearchDorm</Nav.Link>
+                        </LinkContainer>
+                   
+
 
 
              
+
 
                         
 
