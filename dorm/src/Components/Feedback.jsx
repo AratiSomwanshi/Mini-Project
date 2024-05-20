@@ -1,46 +1,64 @@
 import React from 'react';
 import { Container, Row, Col, Image, Card } from 'react-bootstrap';
 import './Styles/aboutUs.css';
-const AboutUs = () => {
+
+const Feedback = () => {
   return (
     <div className="aboutus">
     <Container>
       <Row>
-        <Col className='heading' >  <h1>Welcome to Dorm Discoverer</h1>   </Col>
+        <Col className='heading' >  <h1>FEEDBACK</h1>   </Col>
       </Row>
     
       <Row className="justify-content-center">
-        <Col md={5}>
-          <Card className="vision">
-            <Card.Body>
-              <Card.Title>VISION</Card.Title>
-              <Card.Text>
-                Dorm Discoverer is a platform designed to help travelers, students, and employees find suitable dormitory accommodations wherever they go. Whether you're a student searching for a temporary living space near your university, an employee relocating for work, or a traveler exploring new places, we've got you covered!
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
+      
+
+ <Col md={4}>
+<Card className="message">
+  <Card.Body>
+  <Image src="/images/vision.jpg" alt="Vision" fluid />
+    <Card.Title>Important Message</Card.Title>
+    <Card.Text>
+      We value your feedback! If you have any questions, suggestions, or concerns, please don't hesitate to reach out to us. Your input helps us improve our platform and provide a better experience for all our users.
+    </Card.Text>
+    <Card.Link href="#">Contact Us</Card.Link>
+  </Card.Body>
+</Card>
+</Col> 
+
     
-        <Col md={5}>
-          <Card className="mission">
-            <Card.Body>
-              <Card.Title>MISSION</Card.Title>
-              <Card.Text>
-                Our mission is to simplify the process of finding and booking dormitory rooms, providing a seamless experience for our users. With our extensive database of dormitories, intuitive search features, and secure booking system, you can find the perfect place to stay with ease.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
+      
+
+ <Col md={4}>
+<Card className="message">
+  <Card.Body>
+  <Image src="/images/vision.jpg" alt="Vision" fluid />
+    <Card.Title>Important Message</Card.Title>
+    <Card.Text>
+      We value your feedback! If you have any questions, suggestions, or concerns, please don't hesitate to reach out to us. Your input helps us improve our platform and provide a better experience for all our users.
+    </Card.Text>
+    <Card.Link href="#">Contact Us</Card.Link>
+  </Card.Body>
+</Card>
+</Col> 
+
       </Row>
       <Row className="justify-content-center">
-        <Col md={8}>
-          <Card className="contain">
-            <Card.Body>
-              At Dorm Discoverer, we are committed to providing reliable and affordable accommodation options to our users. Whether you're looking for a budget-friendly dormitory or a luxury living experience, we have something for everyone.<br/>
-              Our team is dedicated to continuously improving our platform, incorporating feedback from our users, and expanding our network of dormitories worldwide. We believe that everyone deserves a comfortable and convenient place to stay, and we're here to make that happen.
-            </Card.Body>
-          </Card>
-        </Col>
+    
+
+ <Col md={4}>
+<Card className="message">
+  <Card.Body>
+  <Image src="/images/vision.jpg" alt="Vision" fluid />
+    <Card.Title>Important Message</Card.Title>
+    <Card.Text>
+      We value your feedback! If you have any questions, suggestions, or concerns, please don't hesitate to reach out to us. Your input helps us improve our platform and provide a better experience for all our users.
+    </Card.Text>
+    <Card.Link href="#">Contact Us</Card.Link>
+  </Card.Body>
+</Card>
+</Col> 
+
       </Row>
         {/* <Row className="justify-content-center">
           <Col md={4}>
@@ -56,44 +74,52 @@ const AboutUs = () => {
       </Row>
       
       <Row className="justify-content-center">
-          <Col md={4}>
-            <Card className="message">
-              <Card.Body>
-             
-                
-              
-                <Card.Img variant="top" src="https://pix6.agoda.net/geo/city/16850/1_16850_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" className="card-image" />
-      
          
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={4}>
-            <Card className="message">
-              <Card.Body>
 
-              <Card.Img variant="top" src="https://pix6.agoda.net/geo/city/17269/1_17269_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" />
-                
-              
-                 
-                <Card.Text> </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={4}>
-            <Card className="message">
-              <Card.Body>
-            
-              <Card.Img variant="top" src='https://pix6.agoda.net/geo/city/8845/017f7c5548e391397f2be20f88df0b2c.jpg?ce=0&s=345x345&ar=1x1' />
-              
-                 
-                  
-                
-              </Card.Body>
-            </Card>
-          </Col>
+ <Col md={4}>
+<Card className="message">
+  <Card.Body>
+  <Image src="/images/vision.jpg" alt="Vision" fluid />
+    <Card.Title>Important Message</Card.Title>
+    <Card.Text>
+      We value your feedback! If you have any questions, suggestions, or concerns, please don't hesitate to reach out to us. Your input helps us improve our platform and provide a better experience for all our users.
+    </Card.Text>
+    <Card.Link href="#">Contact Us</Card.Link>
+  </Card.Body>
+</Card>
+</Col> 
+
+      
+
+ <Col md={4}>
+<Card className="message">
+  <Card.Body>
+  <Image src="/images/vision.jpg" alt="Vision" fluid />
+    <Card.Title>Important Message</Card.Title>
+    <Card.Text>
+      We value your feedback! If you have any questions, suggestions, or concerns, please don't hesitate to reach out to us. Your input helps us improve our platform and provide a better experience for all our users.
+    </Card.Text>
+    <Card.Link href="#">Contact Us</Card.Link>
+  </Card.Body>
+</Card>
+</Col> 
+
+          
+
+ <Col md={4}>
+<Card className="message">
+  <Card.Body>
+  <Image src="/images/vision.jpg" alt="Vision" fluid />
+    <Card.Title>Important Message</Card.Title>
+    <Card.Text>
+      We value your feedback! If you have any questions, suggestions, or concerns, please don't hesitate to reach out to us. Your input helps us improve our platform and provide a better experience for all our users.
+    </Card.Text>
+    <Card.Link href="#">Contact Us</Card.Link>
+  </Card.Body>
+</Card>
+</Col> 
+
         </Row>
-    
       </Container>
     </div>
   );
@@ -106,7 +132,7 @@ export default AboutUs;
 
 
 
-{/* <Col md={4}>
+ <Col md={4}>
 <Card className="message">
   <Card.Body>
   <Image src="/images/vision.jpg" alt="Vision" fluid />
@@ -117,4 +143,4 @@ export default AboutUs;
     <Card.Link href="#">Contact Us</Card.Link>
   </Card.Body>
 </Card>
-</Col> */}
+</Col> 

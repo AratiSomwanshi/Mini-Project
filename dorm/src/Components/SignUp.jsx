@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-
+import './Styles/signup.css';
 export function SignUp() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -22,6 +22,8 @@ export function SignUp() {
   };
 
   return (
+    <>
+    <div className='main'>
     <div className="content">
       <h1>Sign Up</h1>
       <form onSubmit={handleSubmit}>
@@ -50,6 +52,8 @@ export function SignUp() {
       </form>
       <p>{message}</p>
     </div>
+    </div>
+    </>
   )
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col, Card } from 'react-bootstrap';
-import './home.css';
+import './Styles/home.css';
 
 import Footer from './Footer';
 export function Home() {

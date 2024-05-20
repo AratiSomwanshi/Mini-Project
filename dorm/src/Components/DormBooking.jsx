@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import dormData from './dormData.json';
-import "./dormBooking.css";
+import dormData from './Jsonfile/dormData.json';
+import './Styles/dormBooking.css';
 
 // Dorm component
 const Dorm = ({ dorm, onDormSelect }) => {

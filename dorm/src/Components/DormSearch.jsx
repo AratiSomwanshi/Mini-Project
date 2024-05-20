@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import './Styles/dormsearch.css';
 // Import the JSON data
-import countries from './country.json';
-import states from './state.json';
-import cities from './city.json';
+import countries from './Jsonfile/country.json';
+import states from './Jsonfile/state.json';
+import cities from './Jsonfile/city.json';
 
 export function DormSearch() {
   // State hooks for each dropdown

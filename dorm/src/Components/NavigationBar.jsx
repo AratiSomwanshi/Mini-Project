@@ -4,12 +4,12 @@ import { LinkContainer } from "react-router-bootstrap";
 import { BASE_ROUTE, REGISTRATION_ROUTE, DORM_LIST_ROUTE,DORM_SEARCH ,ABOUT_US } from "../constants/AppRoute";
 
 
-import { BASE_ROUTE, REGISTRATION_ROUTE, USER_LIST_ROUTE,DORM_SEARCH, SIGN_UP, LOGIN } from "../constants/AppRoute";
+import {    SIGN_UP, LOGIN } from "../constants/AppRoute";
 
 
-import { BASE_ROUTE, REGISTRATION_ROUTE, DORM_LIST_ROUTE,DORM_SEARCH } from "../constants/AppRoute";
 
-import "./nav.css";
+
+import './Styles/nav.css';
 
 import {  Container,Nav , Navbar} from "react-bootstrap";
 export function NavigationBar() {
@@ -46,11 +46,10 @@ export function NavigationBar() {
                         </LinkContainer>
                    
                         <LinkContainer to ={LOGIN}>
-                            <Nav.Link>LogIn</Nav.Link>
+                            <Nav.Link>Login</Nav.Link>
                         </LinkContainer>
                    
-
-
+                       
 
              
 

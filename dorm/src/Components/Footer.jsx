@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Nav } from "react-bootstrap";
-import "./footer.css"
+import './Styles/footer.css';
 import { LinkContainer } from "react-router-bootstrap";
 import { ABOUT_US } from "../constants/AppRoute";
 
