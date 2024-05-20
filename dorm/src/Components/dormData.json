@@ -1,0 +1,32 @@
+[
+    
+   
+    
+    {
+      "id": 1,
+      "name": "BRAAVOS",
+      "price": 7000,
+      "image": "https://rook.gumlet.io/uploads/center/cover_photo/5c2f453b66a2f625d71e988c/PG_in_Karapakkam.jpeg?format=webp&h=212&compress=true",
+      
+      "city": "pune"
+      },
+      {
+        "id": 2,
+        "name": "AVENUE",
+        "price": 8000,
+        "image": "https://rook.gumlet.io/uploads/center/cover_photo/63d8f2c4fe6e0b00010bd962/03.jpg?format=webp&h=212&compress=true",
+        "city": "Mumbai"
+      
+      },
+      {
+        "id": 3,
+        "name": "GREENTREE",
+        "price": 9320,
+        "image": "https://rook.gumlet.io/uploads/center/cover_photo/5db6a87409ba9927e973f063/Zolo_Sparkle___PG_in_Hinjewadi_Pune.jpg?format=webp&h=212&compress=true",
+        
+        "city": "Chennai"
+      }
+    
+    
+  ]
+  
