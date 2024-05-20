@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import { useState, useEffect } from "react";
 import { Button, Table } from "react-bootstrap";
@@ -82,3 +83,6 @@ function AboutUs(props) {
 } 
 
 export default AboutUs;
+=======
+
+>>>>>>> db7f83776244fe9165f3a9e9785d0cffe7d9ccf1
