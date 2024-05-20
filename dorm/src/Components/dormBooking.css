@@ -1,0 +1,91 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  
+}
+
+
+.dorm-list {
+  margin-top: 20px;
+
+  margin-bottom: 20px;
+}
+
+
+.dorm {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 300px;
+  height:300px;
+}
+
+.dorm:hover {
+  background-color: #d66060;
+}
+
+.dorm.selected {
+  background-color: #f7e2e2;
+}
+
+.dorm h3 {
+  margin-top: 0;
+}
+
+
+
+.booking-form h2 {
+  margin-top: 0;
+}
+
+/* .booking-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+} */
+
+.booking-form button:hover {
+  background-color: #0056b3;
+} 
+
+
+
+.booking-form button {
+  margin-top: 10px;
+}
+
+
+
+.dorm h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+/* Style for dorm image */
+.dorm-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Style for booking form container */
+.booking-form {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Style for booking form title */
+.booking-form h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}

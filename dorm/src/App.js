@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 import { NavigationBar } from "./Components/NavigationBar";
 import { Home } from "./Components/Home";
 import { Registration } from "./Components/Registrastion";
@@ -9,15 +10,29 @@ import {DormSearch} from "./Components/DormSearch";
 import {SignUp} from "./Components/SignUp";
 import {Login} from "./Components/Login";
 
+import { NavigationBar } from "./components/NavigationBar";
+import { Home } from "./components/Home";
+import { Registration } from "./components/Registrastion";
+
+import { BASE_ROUTE, REGISTRATION_ROUTE, DORM_LIST_ROUTE ,DORM_SEARCH} from "./constants/AppRoute";
+import DormBooking from './components/DormBooking';
+
+
+
+import { DormSearch } from './components/DormSearch';
+
+
+
+
 function App() {
   return (
     <BrowserRouter>
       <NavigationBar/>
-      <Footer/>
+  
       <Routes>
         <Route path={BASE_ROUTE} element={<Home/>} />
         <Route path={REGISTRATION_ROUTE} element={<Registration/>} />
-        <Route path={USER_LIST_ROUTE} element={<UserList/>} />
+        <Route path={DORM_LIST_ROUTE} element={<DormBooking/>} />
         <Route path={DORM_SEARCH} element={<DormSearch/>}/>
         <Route path={SIGN_UP} element={<SignUp/>}/>
 
