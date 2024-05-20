@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col, Nav } from "react-bootstrap";
 import "./footer.css"
 import { LinkContainer } from "react-router-bootstrap";
+import { ABOUT_US } from "../constants/AppRoute";
 
 const Footer = () => {
   return (
@@ -21,8 +22,8 @@ const Footer = () => {
                 </LinkContainer>
               </li>
               <li>
-                <LinkContainer to={"/about"}>
-                  <Nav.Link>About </Nav.Link>
+                <LinkContainer to={ABOUT_US}>
+                  <Nav.Link>AboutUs </Nav.Link>
                 </LinkContainer>
               </li>
               <li>
