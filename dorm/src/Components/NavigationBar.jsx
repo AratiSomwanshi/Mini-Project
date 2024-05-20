@@ -2,10 +2,10 @@
 import { LinkContainer } from "react-router-bootstrap";
 import { BASE_ROUTE, REGISTRATION_ROUTE, USER_LIST_ROUTE,DORM_SEARCH, SIGN_UP, LOGIN } from "../constants/AppRoute";
 
-import { Button, Col, Container, Form, Row ,Nav , Navbar} from "react-bootstrap";
+import {  Container,Nav , Navbar} from "react-bootstrap";
 export function NavigationBar() {
     return (
-        <Navbar expand="lg" bg="dark" data-bs-theme="dark">
+        <Navbar expand="lg" >
             <Container>
                 <Navbar.Brand href="#home">DORM </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -35,6 +35,13 @@ export function NavigationBar() {
                             <Nav.Link>LogIn</Nav.Link>
                         </LinkContainer>
                    
+
+
+
+             
+
+
+                        
 
                     </Nav>
                 </Navbar.Collapse>
