@@ -1,6 +1,6 @@
 
 import { LinkContainer } from "react-router-bootstrap";
-import { BASE_ROUTE, REGISTRATION_ROUTE, USER_LIST_ROUTE,DORM_SEARCH } from "../constants/AppRoute";
+import { BASE_ROUTE, REGISTRATION_ROUTE, USER_LIST_ROUTE,DORM_SEARCH, SIGN_UP, LOGIN } from "../constants/AppRoute";
 
 import { Button, Col, Container, Form, Row ,Nav , Navbar} from "react-bootstrap";
 export function NavigationBar() {
@@ -26,8 +26,15 @@ export function NavigationBar() {
                         <LinkContainer to ={DORM_SEARCH}>
                             <Nav.Link>SearchDorm</Nav.Link>
                         </LinkContainer>
+
+                        <LinkContainer to ={SIGN_UP}>
+                            <Nav.Link>Sign Up</Nav.Link>
+                        </LinkContainer>
                    
-                        
+                        <LinkContainer to ={LOGIN}>
+                            <Nav.Link>LogIn</Nav.Link>
+                        </LinkContainer>
+                   
 
                     </Nav>
                 </Navbar.Collapse>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-
+import './Styles/dormsearch.css';
 // Import the JSON data
 import countries from './country.json';
 import states from './state.json';
@@ -13,8 +13,8 @@ export function DormSearch() {
   const [filteredStates, setFilteredStates] = useState([]);
   const [filteredCities, setFilteredCities] = useState([]);
   
-  
   const [showCards, setShowCards] = useState(false);
+  
   // Effect hook to filter states based on selected country
   useEffect(() => {
     const filteredStates = states.filter(state => state.country_id === selectedCountry);
@@ -45,89 +45,95 @@ export function DormSearch() {
   ];
 
   // Card component
-const CardComponent = ({ title, content }) => (
-  <Col md={4}>
-    <div className="card">
-      <div className="card-body">
-        <h5 className="card-title">{title}</h5>
-        <p className="card-text">{content}</p>
+  const CardComponent = ({ title, content }) => (
+    <Col xs={12} md={4}>
+      <div className="card">
+        <div className="card-body">
+          <h5 className="card-title">{title}</h5>
+          <p className="card-text">{content}</p>
+        </div>
       </div>
-    </div>
-  </Col>
-);
+    </Col>
+  );
+
   return (
-    <Container className="mt-5">
-      <Row>
-        <Col>
-          <h2>Search for Dorms</h2>
-          <Form>
-            {/* Location Filters */}
-            <Form.Group controlId="country">
-              <Form.Label>Country</Form.Label>
-              <Form.Control as="select" value={selectedCountry} onChange={handleCountryChange}>
-                <option value="">Select country</option>
-                {countries.map(country => (
-                  <option key={country.country_id} value={country.country_id}>{country.country_name}</option>
-                ))}
-              </Form.Control>
-            </Form.Group>
-
-            <Form.Group controlId="state">
-              <Form.Label>State</Form.Label>
-              <Form.Control as="select" value={selectedState} onChange={handleStateChange}>
-                <option value="">Select state</option>
-                {filteredStates.map(state => (
-                  <option key={state.state_id} value={state.state_id}>{state.state_name}</option>
-                ))}
-              </Form.Control>
-            </Form.Group>
-
-            <Form.Group controlId="city">
-              <Form.Label>City</Form.Label>
-              <Form.Control as="select">
-                <option value="">Select city</option>
-                {filteredCities.map(city => (
-                  <option key={city.city_id} value={city.city_id}>{city.city_name}</option>
-                ))}
-              </Form.Control>
-            </Form.Group>
-
-            <Form.Group controlId="joiningDate">
-              <Form.Label>Joining Date</Form.Label>
-              <Form.Control type="date" />
-            </Form.Group>
-
-            <Form.Group controlId="gender">
-              <Form.Label>Gender</Form.Label>
-              <Form.Control as="select">
-                <option value="">Select gender</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-              </Form.Control>
-            </Form.Group>
-
-            <Form.Group controlId="priceRange">
-              <Form.Label>Price Range</Form.Label>
-              <Form.Control type="text" placeholder="Enter price range" />
-            </Form.Group>
-
-            <Button variant="primary" type="submit" onClick={(event) => {
-              event.preventDefault();
-              setShowCards(true);
-            }}>
-              Search
-            </Button>
-          </Form>
-        </Col>
-      </Row>
-      {showCards && (
+    <>
+      <Container fluid className="search-container">
         <Row>
-          {cardsData.map((card, index) => (
-            <CardComponent key={index} title={card.title} content={card.content} />
-          ))}
+          <Col xs={12} md={6} lg={4}>
+            <h2>Search for Dorms</h2>
+            <Form>
+              {/* Location Filters */}
+              <Form.Group controlId="country">
+                <Form.Label>Country</Form.Label>
+                <Form.Control as="select" value={selectedCountry} onChange={handleCountryChange}>
+                  <option value="">Select country</option>
+                  {countries.map(country => (
+                    <option key={country.country_id} value={country.country_id}>{country.country_name}</option>
+                  ))}
+                </Form.Control>
+              </Form.Group>
+
+              <Form.Group controlId="state">
+                <Form.Label>State</Form.Label>
+                <Form.Control as="select" value={selectedState} onChange={handleStateChange}>
+                  <option value="">Select state</option>
+                  {filteredStates.map(state => (
+                    <option key={state.state_id} value={state.state_id}>{state.state_name}</option>
+                  ))}
+                </Form.Control>
+              </Form.Group>
+
+              <Form.Group controlId="city">
+                <Form.Label>City</Form.Label>
+                <Form.Control as="select">
+                  <option value="">Select city</option>
+                  {filteredCities.map(city => (
+                    <option key={city.city_id} value={city.city_id}>{city.city_name}</option>
+                  ))}
+                </Form.Control>
+              </Form.Group>
+
+              <Form.Group controlId="joiningDate">
+                <Form.Label>Joining Date</Form.Label>
+                <Form.Control type="date" />
+              </Form.Group>
+
+              <Form.Group controlId="gender">
+                <Form.Label>Gender</Form.Label>
+                <Form.Control as="select">
+                  <option value="">Select gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </Form.Control>
+              </Form.Group>
+
+              <Form.Group controlId="priceRange">
+                <Form.Label>Price Range</Form.Label>
+                <Form.Control type="text" placeholder="Enter price range" />
+              </Form.Group>
+
+              <Button variant="primary" type="submit" onClick={(event) => {
+                event.preventDefault();
+                setShowCards(true);
+              }}>
+                Search
+              </Button>
+            </Form>
+          </Col>
         </Row>
+      </Container>
+      
+      {showCards && (
+        <Container className="cards-container">
+          <Row>
+            {cardsData.map((card, index) => (
+              <CardComponent key={index} title={card.title} content={card.content} />
+            ))}
+          </Row>
+        </Container>
       )}
-    </Container>
+    </>
   );
 }
