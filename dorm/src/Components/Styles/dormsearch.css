@@ -1,0 +1,91 @@
+/* dormsearch.css */
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1ea7c;
+  }
+  
+  /* Search Container Styles */
+  .search-container {
+    padding: 20px;
+    background-color: #76f1ae;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* Cards Container Styles */
+  .cards-container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Styles */
+  form {
+    margin-top: 20px;
+  }
+  
+  /* Form Group Styles */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Form Label Styles */
+  .form-label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Form Control Styles */
+  .form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+  }
+  
+  /* Button Styles */
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #8000b3;
+  }
+  
+  /* Card Styles */
+  .card {
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-title {
+    margin-bottom: 15px;
+    color: #007bff;
+  }
+  
+  .card-text {
+    color: #555;
+  }
+  
+  /* Responsive Grid */
+  @media (max-width: 768px) {
+    .col-md-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  
