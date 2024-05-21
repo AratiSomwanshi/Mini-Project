@@ -1,6 +1,4 @@
-/* dormsearch.css */
 
-/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f1ea7c;
@@ -16,11 +14,12 @@ body {
   }
   
   /* Cards Container Styles */
-  .cards-container {
+  .cards-container {  text-align: center;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
   }
   
   /* Form Styles */

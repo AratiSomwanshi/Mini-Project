@@ -1,7 +1,7 @@
 
 import { LinkContainer } from "react-router-bootstrap";
 
-import { BASE_ROUTE, REGISTRATION_ROUTE, DORM_LIST_ROUTE,DORM_SEARCH ,ABOUT_US } from "../constants/AppRoute";
+import { BASE_ROUTE, REGISTRATION_ROUTE, DORM_LIST_ROUTE,DORM_SEARCH ,ABOUT_US, CONTACTUS } from "../constants/AppRoute";
 
 
 import {    SIGN_UP, LOGIN } from "../constants/AppRoute";
@@ -24,9 +24,9 @@ export function NavigationBar() {
                             <Nav.Link>Home</Nav.Link>
                         </LinkContainer>
                         
-                        <LinkContainer to={REGISTRATION_ROUTE}>
+                        {/* <LinkContainer to={REGISTRATION_ROUTE}>
                             <Nav.Link>Registration</Nav.Link>
-                        </LinkContainer>
+                        </LinkContainer> */}
 
                         <LinkContainer to={DORM_LIST_ROUTE}>
                             <Nav.Link>DormBooking</Nav.Link>
@@ -50,7 +50,10 @@ export function NavigationBar() {
                         </LinkContainer>
                    
                        
-
+                        <LinkContainer to ={CONTACTUS}>
+                            <Nav.Link>ContactUs</Nav.Link>
+                        </LinkContainer>
+                   
              
 
 

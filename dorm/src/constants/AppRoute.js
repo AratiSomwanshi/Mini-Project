@@ -11,3 +11,4 @@ export const DORM_SEARCH="/dormsearch";
 
 export const ABOUT_US="/aboutUs";
 
+export const CONTACTUS="/Contactus";

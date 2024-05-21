@@ -10,7 +10,13 @@ const Footer = () => {
       <Container>
         <Row>
           <Col md={6}>
-            <h5>About Us</h5>
+            <h4>Address:</h4>
+            <h5>Main Office</h5>
+        <p>Dorm Discover's
+        123 Business Street, Suite 456</p>
+        <p>Baramati, Maharastra, 413102
+        INDIA
+        Contact Number: +1 (123) 456-7890</p>
             <p></p>
           </Col>
           <Col md={3}>

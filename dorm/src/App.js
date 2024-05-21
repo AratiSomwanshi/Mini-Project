@@ -10,14 +10,16 @@ import {
   DORM_SEARCH,
   ABOUT_US,
   SIGN_UP,
+  CONTACTUS,
   LOGIN,
 } from "./constants/AppRoute";
 import DormBooking from "./components/DormBooking";
 
 import { DormSearch} from "./components/DormSearch";
 import AboutUs from "./components/AboutUs";
-import {Login} from "./components/Login";
+import {Login} from './components/Login';
 import {SignUp} from "./components/SignUp";
+import ContactUs from "./components/ContactUs";
 
 function App() {
   return (
@@ -31,7 +33,7 @@ function App() {
         <Route path={DORM_SEARCH} element={<DormSearch />} />
         <Route path={ABOUT_US} element={<AboutUs />} />
        <Route path={LOGIN} element={< Login/>}/>
-
+       <Route path={CONTACTUS} element={< ContactUs/>}/>
 <Route path={SIGN_UP} element={<SignUp/>}/>
 
       </Routes>
